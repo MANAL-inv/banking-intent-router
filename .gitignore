@@ -7,3 +7,6 @@ data/processed/
 models/
 .DS_Store
 .env
+submission/
+*.zip
+probe.py

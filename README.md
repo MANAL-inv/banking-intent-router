@@ -208,6 +208,16 @@ fine-tuned weights and per-split logits are downloaded into `models/track_c/`.
 
 ## Reproducing
 
+**Track C requires a Colab run first.** The fine-tuned DistilBERT weights (~250MB)
+are not in this repository. Run `notebooks/08_track_c_colab.ipynb` on a GPU runtime,
+download `track_c.zip`, and extract it to `models/track_c/`. Tracks A and B, and the
+Streamlit app's first two columns, work without it.
+
+**Environment note:** dependencies are pinned to the `torch==2.2.2` generation because
+development was on an Intel Mac, for which PyTorch publishes no newer wheels. On Apple
+Silicon or a recent Linux box, remove the pins from `requirements.txt` and install
+current versions — no code changes are needed.
+
 Requires Python 3.11. Pinned to the torch 2.2.2 generation because the development
 machine is an Intel Mac, for which PyTorch publishes no wheels beyond 2.2.2.
 
